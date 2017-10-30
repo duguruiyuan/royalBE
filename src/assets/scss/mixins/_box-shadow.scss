@@ -1,0 +1,34 @@
+//-----------------------
+//过渡效果
+//-----------------------
+
+@mixin box-shadow($effect: fade, $color: $c-ink, $inset: false){
+  $expender: 0px 0px 96px 0px;
+  $fade: 0px 0px 16px 0px;
+  $pure: 0px 0px 8px 0px;
+
+  @if $effect == null {
+    $effect: fade;
+  }
+  @if $color == null {
+    $color: $c-ink;
+  }
+  @debug $effect;
+  @debug $color;
+  $box-shadow-value: "";
+  @if $effect == fade {
+    $box-shadow-value: $fade;
+  }@else if $effect == pure {
+    $box-shadow-value: $pure;
+  }@else if $effect == expender {
+    $box-shadow-value: $expender;
+  }
+
+  $box-shadow-value: #{$box-shadow-value} $color;
+
+  @if $inset==true {
+    $box-shadow-value: #{$box-shadow-value} inset;
+  }
+
+  box-shadow: $box-shadow-value
+}

@@ -1,0 +1,42 @@
+//-----------------------
+//页面具体样式输出
+//-----------------------
+
+//html, body {
+//  height: 100%;
+//  width: 100%;
+//  overflow: hidden;
+//  background-color: $theme-color-bg;
+//}
+//
+////
+////
+////
+//.hidden {
+//  display: none !important;
+//}
+//
+////
+//// 颜色
+////
+//@each $item in $Colors {
+//  $name: nth($item,1);
+//  $value: nth($item,2);
+//  .color-#{$name} {
+//    color: $value !important;
+//  }
+//}
+//
+////
+//// 背景色
+////
+//@each $item in $Colors {
+//  $name: nth($item,1);
+//  $value: nth($item,2);
+//  .bg-#{$name} {
+//    background-color: $value !important;
+//  }
+//}
+//.bg-transparent {
+//  background-color: transparent;
+//}

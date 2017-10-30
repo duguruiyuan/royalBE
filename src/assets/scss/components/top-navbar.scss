@@ -1,0 +1,273 @@
+//-----------------------
+// 左侧菜单
+//-----------------------
+
+
+//组件变量设置
+$top-navbar-height:  60px;
+$top-navbar-bg: white;
+
+$menu-c-primary: $c-royal;
+$menu-c-bg: white;
+$menu-c-bg-active: $c-milka;
+$top-navbar-c-title: $c-killer;
+$top-navbar-text: $c-muted;
+
+$menu-s-p-nav-link: 14px 20px 14px 25px;
+
+$menu-nav-logo-space-p: 10px 20px;
+
+$top-navbar-avatar-size: 50px;
+
+/*----------主题相关start-------------*/
+
+/*----------主题相关end-------------*/
+
+
+//基本样式
+
+.top-navbar {
+  height: $top-navbar-height;
+  background-color: $top-navbar-bg;
+  color: $top-navbar-text;
+  .user-card {
+    padding:0;
+    .avatar {
+      margin-right: $s-sm;
+      height:$top-navbar-avatar-size;
+      width: $top-navbar-avatar-size;
+      border-radius: 50%;
+    }
+  }
+
+  .navbar-top-links {
+    height: inherit;
+    @include display-flex(row,center,stretch);
+    li {
+      min-width: $top-navbar-height;
+      height: inherit;
+      @include display-flex(row,center,stretch);
+      a {
+        @include display-flex(row,center,center);
+        color: $top-navbar-text;
+        font-size: $fs-h6;
+      }
+    }
+    li:last-child {
+      margin-right: 30px;
+    }
+
+    body.body-small .navbar-top-links li:last-child {
+      margin-right: 10px;
+    }
+
+    .dropdown-menu {
+      li {
+        display: block;
+        a {
+          padding: 3px 20px;
+          min-height: 0;
+          div {
+            white-space: normal;
+          }
+        }
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+//.navbar-top-links .dropdown-messages {
+//  margin-left: 5px;
+//}
+//
+//.navbar-top-links .dropdown-tasks {
+//  margin-left: -59px;
+//}
+//
+//.navbar-top-links .dropdown-alerts {
+//  margin-left: -123px;
+//}
+//
+//.navbar-top-links .dropdown-user {
+//  right: 0;
+//  left: auto;
+//}
+//
+//.nav.navbar-top-links .dropdown-alerts a {
+//  font-size: 12px;
+//}
+
+.minimalize-styl-2 {
+  padding: 4px 12px;
+  margin: 14px 5px 5px 20px;
+  font-size: 14px;
+  float: left;
+}
+
+.navbar-form-custom {
+  float: left;
+  height: 50px;
+  padding: 0;
+  width: 200px;
+  display: inline-table;
+}
+
+.navbar-form-custom .form-group {
+  margin-bottom: 0;
+}
+
+.nav.navbar-top-links a {
+  font-size: 14px;
+}
+
+
+
+.navbar-form-custom .form-control {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  font-size: 14px;
+  height: 60px;
+  margin: 0;
+  z-index: 2000;
+}
+
+.count-info .label {
+  line-height: 12px;
+  padding: 1px 5px;
+  position: absolute;
+  right: 6px;
+  top: 12px;
+}
+
+.arrow {
+  float: right;
+  margin-top: 2px;
+}
+
+.fa.arrow:before {
+  content: "\f104";
+}
+
+.active > a > .fa.arrow:before {
+  content: "\f107";
+}
+
+.nav-second-level li,
+.nav-third-level li {
+  border-bottom: none !important;
+}
+
+.nav-second-level li a {
+  padding: 7px 15px 7px 10px;
+  padding-left: 52px;
+}
+
+.nav-third-level li a {
+  padding-left: 62px;
+}
+
+.nav-second-level li:last-child {
+  margin-bottom: 10px;
+}
+
+body:not(.fixed-sidebar):not(.canvas-menu).mini-navbar .nav li:hover > .nav-second-level,
+.mini-navbar .nav li:focus > .nav-second-level {
+  display: block;
+  border-radius: 0 2px 2px 0;
+  min-width: 140px;
+  height: auto;
+}
+
+body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
+  font-size: 12px;
+  border-radius: 0 2px 2px 0;
+}
+
+.fixed-nav .slimScrollDiv #side-menu {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.slimScrollDiv >* {
+  overflow: hidden;
+}
+
+.mini-navbar .nav-second-level li a {
+  padding: 10px 10px 10px 15px;
+}
+
+.canvas-menu.mini-navbar .nav-second-level {
+  background: #293846;
+}
+
+.mini-navbar li.active .nav-second-level {
+  left: 65px;
+}
+
+.navbar-default .special_link a {
+  background: #1ab394;
+  color: white;
+}
+
+.navbar-default .special_link a:hover {
+  background: #17987e !important;
+  color: white;
+}
+
+.navbar-default .special_link a span.label {
+  background: #fff;
+  color: #1ab394;
+}
+
+.navbar-default .landing_link a {
+  background: #1cc09f;
+  color: white;
+}
+
+.navbar-default .landing_link a:hover {
+  background: #1ab394 !important;
+  color: white;
+}
+
+.navbar-default .landing_link a span.label {
+  background: #fff;
+  color: #1cc09f;
+}
+
+.logo-element {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  display: none;
+  padding: 18px 0;
+}
+
+.pace-done .navbar-static-side,
+.pace-done .nav-header,
+.pace-done li.active,
+.pace-done #page-wrapper,
+.pace-done .footer {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-fixed-top {
+  background: #fff;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  z-index: 2030;
+}
+
+
+.fixed-nav #wrapper {
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+
+.fixed-nav .minimalize-styl-2 {
+  margin: 14px 5px 5px 15px;
+}

@@ -1,0 +1,109 @@
+//-----------------------
+//  变量
+//-----------------------
+
+//字体
+//-----------------------
+$baseFontFamily: "黑体";
+
+//字体-大小-----------------------
+$fs-h1: 30px;
+$fs-h2: 24px;
+$fs-h3: 16px;
+$fs-h4: 14px;
+$fs-h5: 12px;
+$fs-h6: 10px;
+$FontSize:(
+        h1:  $fs-h1,
+        h2:  $fs-h2,
+        h3:  $fs-h3,
+        h4:  $fs-h4,
+        h5:  $fs-h5,
+        h6:  $fs-h6
+);
+//字体-粗细-----------------------
+$fw-bold: 600;
+$FontWeight:(
+        bold:  $fw-bold
+);
+
+//色板-----------------------
+$c-knight:      #70599D;
+$c-royal:       #6E70F7;
+$c-heart:       #FF403B;
+$c-cherry:       #FE1E6D;
+$c-mango:      #FFC000;
+$c-sapling:     #93D76E;
+
+$c-killer:      #1f2738;
+$c-ink:         #58647E;
+$c-dream:       #B8C5D8;
+$c-clean:       #deecff;
+$c-milka:       #F8F9FD;
+$c-muted:       #B5C0CB;
+
+
+$Colors: (
+       knight: $c-knight,
+       royal:  $c-royal,
+       heart:  $c-heart,
+       cherry: $c-cherry,
+       mango:  $c-mango,
+       sapling:$c-sapling,
+       killer: $c-killer,
+       ink:    $c-ink,
+       dream:  $c-dream,
+       milka:  $c-milka,
+       muted:  $c-muted
+);
+
+//尺寸-----------------------
+$s-xxs: 1px;
+$s-xs:  5px;
+$s-sm:  10px;
+$s-nm:  15px;
+$s-md:  20px;
+$s-lg:  30px;
+$s-xl:  40px;
+
+$Spaces: (
+        xxs: $s-xxs,
+        xs:  $s-xs,
+        sm:  $s-sm,
+        nm:  $s-nm,
+        md:  $s-md,
+        lg:  $s-lg,
+        xl:  $s-xl
+);
+
+//边线-----------------------
+
+$border-normal: 1px solid rgba(34,36,38,.15);
+
+
+
+//圓角-----------------------
+
+$border-radius-md: .28571429rem;
+$border-radius-lg: .56rem;
+
+
+
+//阴影
+$box-shadow-normal: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+$box-shadow-line: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+
+
+
+//主題设置
+
+$theme-c-bg:        $c-milka;
+$theme-c-wrapper:   white;
+$theme-c-title:      $c-killer;
+$theme-c-text:      $c-milka;
+$theme-c-hr:        $c-milka;
+$theme-c-default:   $c-dream;
+$theme-c-primary:   $c-royal;
+$theme-c-danger:    $c-heart;
+$theme-c-warning:   $c-mango;
+$theme-c-success:   $c-sapling;

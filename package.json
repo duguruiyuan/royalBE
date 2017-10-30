@@ -1,0 +1,20 @@
+{
+  "name": "royalBE",
+  "version": "1.0.0",
+  "description": "给后台人员用的UI框架，真的只是UI框架，fool man backend system",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open --config ./webpack.dev.config.js",
+    "dev": "webpack --progress --colors --config ./webpack.dev.config.js",
+    "build": " webpack --progress --colors --config ./webpack.prod.config.js"
+  },
+  "author": "nocoolyoyo",
+  "license": "ISC"
+}

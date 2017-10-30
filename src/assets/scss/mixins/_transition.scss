@@ -1,0 +1,18 @@
+//-----------------------
+//过渡效果
+//-----------------------
+
+@mixin transition($speed: slow,$effect:all, $animate: ease){
+  $slow: 0.5s;
+  $normal: 0.3s;
+  $fast: 0.1s;
+  @if $speed == slow {
+    transition: $effect $slow $animate
+  }@else if $speed == normal{
+    transition: $effect $normal $animate
+  }@else if $speed == fast {
+    transition: $effect $fast $animate
+  }@else {
+    transition: $effect $speed $animate
+  }
+}

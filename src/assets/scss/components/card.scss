@@ -1,0 +1,42 @@
+//-----------------------
+// 容器设置样式
+//-----------------------
+
+
+
+$card-space: 20px;
+$card-bg: white;
+$card-c-text: $c-muted;
+
+
+.card {
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  background-color: $card-bg;
+  //&>div:first-child {
+  //  -moz-border-radius: $border-radius-normal 0 0 0;
+  //}
+  //&>div:last-child {
+  //  -moz-border-radius:  0 0 0 $border-radius-normal;
+  //}
+
+  @include box-shadow(null,$c-clean,pure);
+  margin: $card-space;
+  .card-head {
+      padding: 15px;
+      color: $card-c-text;
+      font-size: $fs-h3;
+  }
+  .card-body {
+      padding: 15px;
+  }
+  .card-foot {
+
+  }
+
+  @include transition(slow);
+  &:hover {
+    @include box-shadow(null,$c-dream,expender);
+    @include box-shadow(null,$c-dream,expender);
+  }
+}

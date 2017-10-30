@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+
+
+    <title>H+ 后台主题UI框架 - 主页示例</title>
+
+    <!-- 全局模块 -->
+    <!--icon图标库-->
+    <link href="../modules/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!--CSS动画库-->
+    <link href="../modules/vendor/animate/animate.css" rel="stylesheet">
+    <!--jquery-->
+    <script src="../modules/vendor/jQuery/jquery.min.js"></script>
+    <!--bootstrap-->
+    <link href="../modules/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../modules/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <link href="../modules/custom/royal/style.css" rel="stylesheet">
+
+    <!--&lt;!&ndash;icheck&ndash;&gt;-->
+    <!--<link href="../modules/vendor/iCheck/custom.css" rel="stylesheet">-->
+    <!--<script src="../modules/vendor/iCheck/icheck.min.js"></script>-->
+    <!--&lt;!&ndash;switchery&ndash;&gt;-->
+
+
+
+    <!--<link href="../modules/vendor/switchery/switchery.css" rel="stylesheet">-->
+    <!--<script src="../modules/vendor/switchery/switchery.js"></script>-->
+
+
+    <!--<link href="../modules/vendor/nouslider/jquery.nouislider.css" rel="stylesheet">-->
+    <!--<script src="../modules/vendor/nouslider/jquery.nouislider.min.js"></script>-->
+
+    <!--<link href="../modules/vendor/ionRangeSlider/ion.rangeSlider.css" rel="stylesheet">-->
+    <!--<link href="../modules/vendor/ionRangeSlider/ion.rangeSlider.skinFlat.css" rel="stylesheet">-->
+    <!--<script src="../modules/vendor/ionRangeSlider/ion.rangeSlider.min.js"></script>-->
+
+    <!--<script src="../modules/vendor/jsKnob/jquery.knob.js"></script>-->
+
+    <script src="../modules/vendor/peity/jquery.peity.min.js"></script>
+    <!-- Flot -->
+    <script src="../modules/vendor/flot/jquery.flot.js"></script>
+    <script src="../modules/vendor/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="../modules/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="../modules/vendor/flot/jquery.flot.pie.js"></script>
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-head">
+                    <h4>自定义响应式表格</h4>
+                </div>
+                <div class="card-body">
+                    <form role="form" class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group m-b-sm">
+                                <span class="input-group-addon">平台</span>
+                                <select class="form-control">
+                                    <option value="0">全平台</option>
+                                    <option value="1">IOS</option>
+                                    <option value="2">Android</option>
+                                </select>
+                            </div>
+                            <div class="input-group m-b-sm">
+                                <span class="input-group-addon">渠道</span>
+                                <select class="form-control">
+                                    <option value="0">全部</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="input-group m-b-sm">
+                                <span class="input-group-addon">CPI</span>
+                                <input type="text" placeholder="请输入CPI" id="CPI" class="form-control">
+                            </div>
+                            <div class="input-group m-b-sm">
+                                <span class="input-group-addon">时间范围</span>
+                                <div class="input-daterange input-group" id="datepicker">
+                                    <input type="text" class="form-control" name="start" value="2014-11-11">
+                                    <span class="input-group-addon">到</span>
+                                    <input type="text" class="form-control" name="end" value="2014-11-17">
+                                </div>
+                            </div>
+                            <div class="input-group m-b-sm">
+                                <span class="input-group-addon">展示维度</span>
+                                <select class="form-control">
+                                    <option value="0">天</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+
+                            </div>
+                            <div class="input-group m-b-sm">
+                                <select class="form-control">
+                                    <option value="0">不按天展示</option>
+                                    <option value="1">按天展示,级别1</option>
+                                    <option value="2">按天展示,级别2</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </form>
+                    <hr>
+
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>渠道</th>
+                                <th>新增激活数</th>
+                                <th>激活数占比</th>
+                                <th>广告花费</th>
+                                <th>激活成本</th>
+                                <th>新增设备注册</th>
+                                <th>注册率</th>
+                                <th>新增注册成本</th>
+                                <th>新增设备上线</th>
+                                <th>上线率</th>
+                                <th>新增上线成本</th>
+                                <th>充值金额</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    全部
+                                </td>
+                                <td>
+                                    7767
+                                </td>
+                                <td>
+                                    <span>100.00%</span>
+                                </td>
+                                <td>
+                                    $14,621.10
+                                </td>
+                                <td>
+                                    $1.88
+                                </td>
+                                <td>
+                                6422
+                                </td>
+                                <td>
+                                    <span class="pie">2/3</span>
+                                </td>
+                                <td>
+                                    $2.28
+                                </td>
+                                <td>
+                                6306
+                                </td>
+                                <td>
+                                98.19%
+                                </td>
+                                <td>
+                                $2.32
+                                </td>
+                                <td>
+                                $456,864.37
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                自然用户合计
+                                </td>
+                                <td>
+                                0
+                                </td>
+                                <td>
+                                    0.00%
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                0
+                                </td>
+                                <td>
+                                    <span class="pie">2/5</span>
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                0
+                                </td>
+                                <td>
+                                    0.00%
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                $0.00
+
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>
+                                激励渠道
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                0.00%
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                0
+                                </td>
+                                <td>
+                                    <span class="pie">2/7</span>
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                0
+                                </td>
+                                <td>
+                                    0.00%
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                    $0.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                非激励渠道
+                                </td>
+                                <td>
+                                7,767
+                                </td>
+                                <td>
+                                100.00%
+                                </td>
+                                <td>
+                                $14621.10
+                                </td>
+                                <td>
+                                $1.88
+                                </td>
+                                <td>
+                                6,422
+                                </td>
+                                <td>
+                                    <span class="pie">2/7</span>
+                                </td>
+                                <td>
+                                    $2.28
+                                </td>
+                                <td>
+                                    6,306
+                                </td>
+                                <td>
+                                    98.19%
+                                </td>
+                                <td>
+                                $2.32
+                                </td>
+                                <td>
+                                $456864.37
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    分享渠道
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                0.00%
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                    $0.00
+                                </td>
+                                <td>
+                                0
+                                </td>
+                                <td>
+                                    <span class="pie">2/6</span>
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+                                <td>
+                                0
+                                </td>
+                                <td>
+                                    0.00%
+                                </td>
+                                <td>
+                                    $0.00
+                                </td>
+                                <td>
+                                $0.00
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    合计
+                                </td>
+                                <td>
+                                  	7,767  </td>
+                                <td>	100.00%  </td>
+                                <td>	$14621.10  </td>
+                                <td>	$1.88  </td>
+                                <td>	6,422  </td>
+                                <td>	82.68%  </td>
+                                <td>	$2.28	  </td>
+                                <td>6,306  </td>
+                                <td>	98.19%  </td>
+                                <td>	$2.32  </td>
+                                <td>	$456864.37  </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                    <nav aria-label="navigation" style="float: right">
+                        <ul class="pagination pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-head">
+                    <h4>新增激活对比</h4>
+                </div>
+                <div class="card-body">
+                    <div class="flot-chart">
+                        <div class="flot-chart-content" id="flot-bar-chart1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-head">
+                    <h4>激活成本对比</h4>
+                </div>
+                <div class="card-body">
+                    <div class="flot-chart">
+                        <div class="flot-chart-content" id="flot-bar-chart2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-head">
+                    <h4>充值金额对比</h4>
+                </div>
+                <div class="card-body">
+                    <div class="flot-chart">
+                        <div class="flot-chart-content" id="flot-bar-chart3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-head">
+                    <h4>激活数据对比</h4>
+                </div>
+                <div class="card-body">
+                    <div class="flot-chart">
+                        <div class="flot-chart-content" id="flot-pie-chart1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    //Flot Bar Chart
+    $(function() {
+        var barOptions = {
+            series: {
+                bars: {
+                    show: true,
+                    barWidth: 0.6,
+                    fill: true,
+                    fillColor: {
+                        colors: [{
+                            opacity: 0.8
+                        }, {
+                            opacity: 0.8
+                        }]
+                    }
+                }
+            },
+            xaxis: {
+                tickDecimals: 0
+            },
+            colors: ["#6E70F7"],
+            grid: {
+                color: "#999999",
+                hoverable: true,
+                clickable: true,
+                tickColor: "#D4D4D4",
+                borderWidth:0
+            },
+            legend: {
+                show: false
+            },
+            tooltip: true,
+            tooltipOpts: {
+                content: "x: %x, y: %y"
+            }
+        };
+        var barData = {
+            label: "bar",
+            data: [
+                [1, 34],
+                [2, 25],
+                [3, 19],
+                [4, 34],
+                [5, 32],
+                [6, 44]
+            ]
+        };
+        $.plot($("#flot-bar-chart1"), [barData], barOptions);
+        $.plot($("#flot-bar-chart2"), [barData], barOptions);
+        $.plot($("#flot-bar-chart3"), [barData], barOptions);
+    });
+
+    //Flot Pie Chart
+    $(function() {
+
+        var data = [{
+            label: "数据 1",
+            data: 21,
+            color: "#93D76E",
+        }, {
+            label: "数据 2",
+            data: 3,
+            color: "#FF403B",
+        }, {
+            label: "数据 3",
+            data: 15,
+            color: "#6E70F7",
+        }, {
+            label: "数据 4",
+            data: 52,
+            color: "#70599D",
+        }];
+
+        var plotObj = $.plot($("#flot-pie-chart1"), data, {
+            series: {
+                pie: {
+                    show: true
+                }
+            },
+            grid: {
+                hoverable: true
+            },
+            tooltip: true,
+            tooltipOpts: {
+                content: "%p.0%, %s", // show percentages, rounding to 2 decimal places
+                shifts: {
+                    x: 20,
+                    y: 0
+                },
+                defaultTheme: false
+            }
+        });
+        $("span.pie").peity("pie", {
+            fill: ['#6E70F7', '#d7d7d7', '#ffffff']
+        })
+    });
+
+</script>
+
+</body>
+</html>

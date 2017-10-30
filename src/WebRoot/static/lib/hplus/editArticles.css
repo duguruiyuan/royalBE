@@ -1,0 +1,406 @@
+/*¸»ÎÄ±¾±à¼­*/
+.note-editable {
+  color: #4a4a4a;
+  font-size: 17px;
+  line-height: 29px;
+  word-wrap: break-word;
+  margin: 0.4rem 0.26667rem; }
+  [data-dpr="2"] .note-editable {
+    font-size: 34px;
+    line-height: 58px; }
+  [data-dpr="3"] .note-editable {
+    font-size: 51px;
+    line-height: 87px; }
+  .note-editable img,
+  .note-editable iframe {
+    max-width: 100%; }
+  .note-editable .top-title {
+    margin: 0.8rem 0;
+    font-size: 19px;
+    line-height: 34px;
+    display: block;
+    width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    [data-dpr="2"] .note-editable .top-title {
+      font-size: 38px;
+      line-height: 68px; }
+    [data-dpr="3"] .note-editable .top-title {
+      font-size: 57px;
+      line-height: 102px; }
+    .note-editable .top-title .title {
+      color: #c6a86f;
+      flex: 1.5;
+      -webkit-flex: 1.5;
+      -ms-flex: 1.5;
+      text-align: center; }
+      .note-editable .top-title .title .first-title {
+        border-bottom: 1px #dfdbd3 solid;
+        font-size: 19px;
+        line-height: 34px; }
+        [data-dpr="2"] .note-editable .top-title .title .first-title {
+          font-size: 38px;
+          line-height: 68px; }
+        [data-dpr="3"] .note-editable .top-title .title .first-title {
+          font-size: 57px;
+          line-height: 102px; }
+      .note-editable .top-title .title .second-title {
+        font-size: 12px;
+        line-height: 24px; }
+        [data-dpr="2"] .note-editable .top-title .title .second-title {
+          font-size: 24px;
+          line-height: 48px; }
+        [data-dpr="3"] .note-editable .top-title .title .second-title {
+          font-size: 36px;
+          line-height: 72px; }
+    .note-editable .top-title:before {
+      content: '- - - ¡ô ';
+      flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      text-align: right;
+      color: #dfdbd3; }
+    .note-editable .top-title:after {
+      content: ' ¡ô - - -';
+      text-align: left;
+      flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      color: #dfdbd3; }
+  .note-editable .main-title {
+    margin: 0.8rem 0;
+    font-size: 19px;
+    color: #c6a86f;
+    display: block;
+    width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    [data-dpr="2"] .note-editable .main-title {
+      font-size: 38px; }
+    [data-dpr="3"] .note-editable .main-title {
+      font-size: 57px; }
+    .note-editable .main-title .title {
+      text-align: center;
+      flex: 1.5;
+      -webkit-flex: 1.5;
+      -ms-flex: 1.5; }
+    .note-editable .main-title:before {
+      content: '- - - ¡ô ';
+      flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      text-align: right;
+      color: #dfdbd3; }
+    .note-editable .main-title:after {
+      content: ' ¡ô - - -';
+      text-align: left;
+      flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      color: #dfdbd3; }
+  .note-editable .sub-title {
+    color: #4a4a4a;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: bold;
+    margin: 0.8rem 0;
+    text-align: center; }
+    [data-dpr="2"] .note-editable .sub-title {
+      font-size: 34px;
+      line-height: 58px; }
+    [data-dpr="3"] .note-editable .sub-title {
+      font-size: 51px;
+      line-height: 87px; }
+    .note-editable .sub-title:before {
+      content: '[  ';
+      color: #c6a86f; }
+    .note-editable .sub-title:after {
+      content: ' ]';
+      color: #c6a86f; }
+  .note-editable .list-title {
+    color: #4a4a4a;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: bold;
+    margin: 0.8rem 0; }
+    [data-dpr="2"] .note-editable .list-title {
+      font-size: 34px;
+      line-height: 58px; }
+    [data-dpr="3"] .note-editable .list-title {
+      font-size: 51px;
+      line-height: 87px; }
+    .note-editable .list-title span:first-child {
+      color: #c6a86f; }
+      .note-editable .list-title span:first-child:after {
+        content: ' / ';
+        color: #4a4a4a; }
+  .note-editable .message-box {
+    margin: 0.8rem 0;
+    width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; }
+    .note-editable .message-box .avatar {
+      width: 0.86667rem;
+      height: 0.86667rem;
+      border-radius: 50%; }
+    .note-editable .message-box .content {
+      color: #b3afa8;
+      border: 0.02667rem solid #f8f7f4;
+      border-radius: 0.06667rem;
+      margin-left: 0.4rem;
+      padding: 0.2rem 0.13333rem;
+      background-color: #fff;
+      position: relative;
+      font-size: 16px;
+      line-height: 27px;
+      float: left; }
+      [data-dpr="2"] .note-editable .message-box .content {
+        font-size: 32px;
+        line-height: 54px; }
+      [data-dpr="3"] .note-editable .message-box .content {
+        font-size: 48px;
+        line-height: 81px; }
+      .note-editable .message-box .content:before, .note-editable .message-box .content:after {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border: solid transparent;
+        pointer-events: none;
+        content: ""; }
+      .note-editable .message-box .content:before {
+        border-right-color: #dfdbd3;
+        border-width: 0.18667rem;
+        top: 23%;
+        right: 100%; }
+      .note-editable .message-box .content:after {
+        border-right-color: #fff;
+        border-width: 0.17333rem;
+        top: 25%;
+        right: 100%; }
+  .note-editable .media-box {
+    margin: 0.8rem 0;
+    width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .note-editable .media-box .media-inner-box {
+      border-radius: 0.05333rem;
+      background-color: #dfdbd3;
+      border: 0.02667rem solid #dfdbd3;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      /* Firefox */
+      -webkit-box-sizing: border-box;
+      /* Safari */ }
+      .note-editable .media-box .media-inner-box img {
+        display: block;
+        padding: 0.13333rem 0.13333rem 0 0.13333rem;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        /* Firefox */
+        -webkit-box-sizing: border-box;
+        /* Safari */
+        width: 100% !important; }
+      .note-editable .media-box .media-inner-box iframe {
+        border: 0.13333rem solid transparent;
+        width: 100% !important; }
+      .note-editable .media-box .media-inner-box .title {
+        margin-bottom: 0.13333rem;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #4a4a4a; }
+        [data-dpr="2"] .note-editable .media-box .media-inner-box .title {
+          font-size: 24px;
+          line-height: 36px; }
+        [data-dpr="3"] .note-editable .media-box .media-inner-box .title {
+          font-size: 36px;
+          line-height: 54px; }
+  .note-editable .sbb-section1 {
+    margin: 1.2rem 0 0.8rem 0;
+    border: 0.02667rem solid #f8f7f4;
+    padding: 0.4rem 0.26667rem;
+    position: relative; }
+    .note-editable .sbb-section1 .title {
+      color: #4a4a4a;
+      font-size: 17px;
+      position: absolute;
+      background: #fff;
+      top: -0.4rem;
+      border: 0.01333rem solid #f8f7f4;
+      padding: 0.13333rem;
+      box-shadow: 0.06667rem 0.06667rem 0 #f8f7f4; }
+      [data-dpr="2"] .note-editable .sbb-section1 .title {
+        font-size: 34px; }
+      [data-dpr="3"] .note-editable .sbb-section1 .title {
+        font-size: 51px; }
+    .note-editable .sbb-section1 .content {
+      color: #4a4a4a;
+      font-size: 17px;
+      margin-top: 0.4rem; }
+      [data-dpr="2"] .note-editable .sbb-section1 .content {
+        font-size: 34px; }
+      [data-dpr="3"] .note-editable .sbb-section1 .content {
+        font-size: 51px; }
+  .note-editable .conclusion {
+    margin: 0.8rem 0;
+    padding: 0.26667rem;
+    background-color: #f8f7f4;
+    box-shadow: 0.13333rem 0.13333rem 0 #d9d7d2; }
+    .note-editable .conclusion .content {
+      font-size: 16px;
+      line-height: 27px;
+      color: #c6a86f; }
+      [data-dpr="2"] .note-editable .conclusion .content {
+        font-size: 32px;
+        line-height: 54px; }
+      [data-dpr="3"] .note-editable .conclusion .content {
+        font-size: 48px;
+        line-height: 81px; }
+  .note-editable .blockquote {
+    color: #737169;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0.8rem 0;
+    padding: 0.26667rem;
+    border-left: 0.08rem solid #c6a86f;
+    background-color: #f8f7f4; }
+    [data-dpr="2"] .note-editable .blockquote {
+      font-size: 32px;
+      line-height: 54px; }
+    [data-dpr="3"] .note-editable .blockquote {
+      font-size: 48px;
+      line-height: 81px; }
+  .note-editable .articlequote {
+    color: #737169;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0.8rem 0;
+    padding: 0.26667rem;
+    background-color: #f8f7f4;
+    position: relative; }
+    [data-dpr="2"] .note-editable .articlequote {
+      font-size: 32px;
+      line-height: 54px; }
+    [data-dpr="3"] .note-editable .articlequote {
+      font-size: 48px;
+      line-height: 81px; }
+    .note-editable .articlequote:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 1.6rem;
+      border-bottom: 0.05333rem solid #c6a86f;
+      color: #c6a86f; }
+  .note-editable .introduction {
+    color: #737169;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0.8rem 0;
+    background-color: #f8f7f4;
+    position: relative;
+    padding: 1.06667rem 0.26667rem 1.06667rem; }
+    [data-dpr="2"] .note-editable .introduction {
+      font-size: 32px;
+      line-height: 54px; }
+    [data-dpr="3"] .note-editable .introduction {
+      font-size: 48px;
+      line-height: 81px; }
+    .note-editable .introduction:before {
+      content: '¡°';
+      display: block;
+      position: absolute;
+      top: 0.8rem;
+      left: 0.13333rem;
+      font-size: 80px;
+      font-family: "Arial","Arial Black";
+      color: #c6a86f; }
+      [data-dpr="2"] .note-editable .introduction:before {
+        font-size: 160px; }
+      [data-dpr="3"] .note-editable .introduction:before {
+        font-size: 240px; }
+    .note-editable .introduction:after {
+      content: '¡±';
+      display: block;
+      text-align: right;
+      position: absolute;
+      bottom: -0.13333rem;
+      right: 0.13333rem;
+      font-size: 80px;
+      font-family: "Arial", "Arial Black";
+      color: #c6a86f; }
+      [data-dpr="2"] .note-editable .introduction:after {
+        font-size: 160px; }
+      [data-dpr="3"] .note-editable .introduction:after {
+        font-size: 240px; }
+  .note-editable .table-bordered {
+    border: 1px solid #EBEBEB; }
+  .note-editable .table-bordered {
+    border: 1px solid #ddd; }
+  .note-editable .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .note-editable table {
+    background-color: transparent; }
+  .note-editable table {
+    border-spacing: 0;
+    border-collapse: collapse; }
+  .note-editable * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .note-editable table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey; }
+  .note-editable tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit; }
+  .note-editable tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit; }
+  .note-editable .table > thead > tr > th, .note-editable .table > tbody > tr > th, .note-editable .table > tfoot > tr > th, .note-editable .table > thead > tr > td, .note-editable .table > tbody > tr > td, .note-editable .table > tfoot > tr > td {
+    border-top: 1px solid #e7eaec;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: middle; }
+  .note-editable .table-bordered > thead > tr > th, .note-editable .table-bordered > tbody > tr > th, .note-editable .table-bordered > tfoot > tr > th, .note-editable .table-bordered > thead > tr > td, .note-editable .table-bordered > tbody > tr > td, .note-editable .table-bordered > tfoot > tr > td {
+    border: 1px solid #e7e7e7; }

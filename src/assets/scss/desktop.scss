@@ -1,0 +1,143 @@
+//-----------------------
+// 页面样式设置
+//-----------------------
+
+@import "variables";
+@import "mixins";
+$desktop-width-side-menu:  220px;
+$desktop-height-top-tools:  50px;
+$desktop-height-frame-tabs:  40px;
+$desktop-font-size-frame-tabs: 14px;
+$desktop-border-height-slim: 1px;
+$desktop-border-height-bold: 2px;
+$desktop-border-tabs-list-li: 0.5px solid $theme-c-hr;
+$desktop-transition-tabs:  all 0.3s ease;
+$desktop-tab-max-size:  200px;
+$desktop-width-i: 25px;
+
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: $theme-c-bg;
+}
+#desktop {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: $theme-c-bg;
+  @include display-flex(row,space-between,center);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  .side-menu {
+    background-color: $theme-c-wrapper;
+    min-height: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    contain: size style layout;
+    position: relative;
+    width: $desktop-width-side-menu;
+    //展开样式
+    &.menu-max {
+      width: $desktop-width-side-menu;
+    }
+    &::-webkit-scrollbar {
+      display:none
+    }
+
+    //LOGO样式
+    .nav-logo {
+      $desktop-logo-height: 60px;
+      $desktop-logo-space-p: 10px 20px;
+      height: $desktop-logo-height;
+      padding: 10px 20px;
+      background-color: $theme-c-primary;
+      @include display-flex(row,flex-start,center);
+      flex-wrap: nowrap;
+
+      position: relative;
+      overflow-x: hidden;
+      img{
+        transition: opacity 0.2s linear;
+        width: auto;
+        opacity: 1;
+      }
+    }
+
+    //菜单样式
+    .nav {
+      background-color: transparent;
+      li {
+        a {
+          color: $theme-c-title;
+        }
+        @include transition(slow,border);
+        //激活样式相关
+        &.active {
+          @include box-shadow(null,lighten($c-dream,10%),true);
+          a {
+            color: darken($theme-c-title,10%);
+          }
+          background-color: $c-milka;
+          border-left: 5px solid $theme-c-primary;
+        }
+      }
+    }
+
+  }
+  .layout {
+    height:100%;
+    flex: 1;
+    overflow: hidden;
+    @include display-flex(column,space-between,stretch);
+    //顶部工具条
+    .top-tools {
+      padding: 5px;
+      height: $desktop-height-top-tools;
+      min-height: $desktop-height-top-tools;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    .frame-tabs {
+      user-select: none;
+      background-color: $theme-c-text;
+      height: $desktop-height-frame-tabs;
+      min-height: $desktop-height-frame-tabs;
+      box-sizing: border-box;
+
+    }
+    .frame-pages {
+      flex: 1;
+      iframe {
+
+      }
+      //.page {
+      //  display: none;
+      //  right: 0;
+      //  bottom: 0;
+      //  z-index: 1;
+      //  overflow-x: hidden;
+      //  overflow-y: auto;
+      //  -webkit-overflow-scrolling: touch;
+      //  will-change: scroll-position;
+      //  contain: size style layout;
+      //  top: 0;
+      //  left: 0;
+      //  position: relative;
+      //  height:100%;
+      //  &.active {
+      //    display: block;
+      //  }
+      //  .page-iframe {
+      //    width: 100%;
+      //    height: 100%;
+      //  }
+      //}
+    }
+  }
+}
+
